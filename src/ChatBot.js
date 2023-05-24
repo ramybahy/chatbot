@@ -30,7 +30,10 @@ Links:["https://www.budgetdirect.com.au/interactives/best-time-to-visit/hawaii/"
 
   return (
     <div className="chat-bot">
+    <div className="chat-bot__inner">
+
     <SideMenu/>
+
     <div className="chat-bot__window">
      <h1 className="chat-bot__title">welcome to our chatbot</h1>
     <div className="chat-bot__agent-chat">
@@ -50,6 +53,8 @@ Links:["https://www.budgetdirect.com.au/interactives/best-time-to-visit/hawaii/"
       </div>
       <button disabled={name==="" || travel ===""} className={name==="" || travel ==="" ? "chat-bot__deploy chat-bot__deploy--disabled" :"chat-bot__deploy "} > Deploy Agent</button>
     </div>
+    </div>
+
     </div>
   );
 }

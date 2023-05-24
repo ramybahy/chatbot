@@ -1,14 +1,18 @@
 .chat-bot{
-    display:flex;
     &__window{background-color: #292929;
    display: flex;
    flex-wrap: wrap;
    gap:1rem;
-   padding:1rem;
+   padding:2rem;
    color: #f0f0f1;
-   flex:6;
    justify-content: center;
-   height: 100%;}
+   flex:6;
+}
+&__inner{
+    display: flex;
+    align-items: flex-start;
+    background-color: #292929;
+}
    &__deploy{
 background-color: #1f69ab;
 color:white;
@@ -31,7 +35,8 @@ border:2px solid gray;
         border: 1px solid #464649;
 border-radius:5px;
 padding:1rem;
-
+min-height: 300px;
+overflow-y:scroll ;
     }
     &__current-tasks{
        flex:1;
