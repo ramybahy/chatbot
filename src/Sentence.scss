@@ -1,26 +1,15 @@
-.sign-in{
-    margin:auto;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__title{
-        font-weight: bold;
-        size: 32px;
-    }
-    &__input{
-        display:block;
-        margin-bottom: 2rem;
-        padding:1rem;
-        width: 100%;
-        border: 1px solid #ccc;
-    }
-    &__submit{
-        width:fit-content;
-        background-color: green;
-        color: #fff;
-        border:0;
-        padding: 0.5rem 1rem;
+.chat-bot{
+    &__message{
+    background-color: #464649;
+    border: 1px solid #59595b;
+    border-radius:5px;
+    padding:1rem; 
+    margin:0 1rem 1rem; 
+    text-align: left;
+    &--current-task{
+        background-color: #59595b;
+        border: 1px solid #464649;
     }
 }
 
+}

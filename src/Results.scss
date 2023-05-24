@@ -1,0 +1,16 @@
+
+
+.result-wrapper{
+    background-color: #59595b;
+    border: 1px solid #22914B;
+text-align: left;
+margin:1rem 0;
+    border-radius:5px;
+    padding:1rem; 
+    margin:1rem; 
+
+    &__task-name{
+    border-bottom: 2px solid lightgray;
+    padding-bottom:0.5rem;
+    }
+}
