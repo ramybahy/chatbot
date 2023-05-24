@@ -14,19 +14,19 @@ function SignIn() {
   const handleSignIn=()=>{
     if(email.current.value==localEmail&&password.current.value==localPassword){
         localStorage.setItem("signUp",email.current.value)
-        navigate("/chatbot");
+        navigate("/chatbot/chatwindow");
     }else{
 //show message to the user that credentials are not valid
     }
    }
   return (
-    <div className="sign-in">
+    <form className="sign-in">
       <p className="sign-in__title">sign in</p>
     <input className="sign-in__input" placeholder="Enter your email" type="email" name="email"ref={email}/>
     <input className="sign-in__input" placeholder="Enter your password" type="password" name="password" ref={password}/>
-     <button className='sign-in__submit' onClick={handleSignIn} >Submit</button>
-     <p>don't Have an Account? < NavLink to="/"> signup</NavLink></p>
-    </div>
+     <button type="submit" className='sign-in__submit' onClick={handleSignIn} >Submit</button>
+     <p>don't Have an Account? < NavLink to="/chatbot"> signup</NavLink></p>
+    </form>
   );
 }
 

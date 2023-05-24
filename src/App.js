@@ -10,9 +10,9 @@ function App() {
     <div className="App">
      <BrowserRouter>
       <Routes>
-        <Route index element={<SignUp />}/>
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/chatbot" element={<ChatBot />} />
+        <Route path="/chatbot" element={<SignUp />}/>
+        <Route path="/chatbot/signin" element={<SignIn />} />
+        <Route path="/chatbot/chatwindow" element={<ChatBot />} />
       </Routes>
     </BrowserRouter>
     </div>

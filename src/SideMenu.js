@@ -9,7 +9,7 @@ function SideMenu() {
 
   const handleSignOut=()=>{
     localStorage.removeItem("signUp")
-    navigate("/");
+    navigate("/chatbot/signin");
   }
   return (
     <div className="side-menu">

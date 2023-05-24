@@ -16,18 +16,18 @@ function SignUp() {
        localStorage.setItem("email",email.current.value)
        localStorage.setItem("password",password.current.value)
        localStorage.setItem("signUp",email.current.value)
-       navigate("/chatbot");
+       navigate("/chatbot/chatwindow");
       }
   } 
   return (
-    <div className="sign-up">
+    <form className="sign-up">
       <p className="sign-up__title">sign up</p>
     <input className="sign-up__input" placeholder="Enter your name" type="text" name="name" ref={name}/>
     <input className="sign-up__input" placeholder="Enter your email" type="email" name="email" ref={email}/>
     <input className="sign-up__input" placeholder="Enter your password" type="password" name="password" ref={password}/>
-     <button className='sign-up__submit' onClick={handleSignUp}>Submit</button>
-     <p>Already Have an Account? < NavLink to="/signin"> signin</NavLink></p>
-    </div>
+     <button type="submit" className='sign-up__submit' onClick={handleSignUp}>Submit</button>
+     <p>Already Have an Account? < NavLink to="/chatbot/signin"> signin</NavLink></p>
+    </form>
   );
 }
 
