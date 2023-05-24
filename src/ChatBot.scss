@@ -1,0 +1,77 @@
+.chat-bot{
+    display:flex;
+    &__window{background-color: #292929;
+   display: flex;
+   flex-wrap: wrap;
+   gap:1rem;
+   padding:1rem;
+   color: #f0f0f1;
+   flex:6;
+   justify-content: center;
+   height: 100%;}
+   &__deploy{
+background-color: #1f69ab;
+color:white;
+border-radius: 5px;
+padding:1rem 1.5rem;
+font-weight: bold;
+border: 0;
+
+   &--disabled{ background-color: #18181b;
+color:#5c5c5e;
+border:2px solid gray;
+
+&:hover{ cursor:no-drop}
+}
+
+   }
+    &__agent-chat{
+        flex:3;
+        background-color: #18181b;
+        border: 1px solid #464649;
+border-radius:5px;
+padding:1rem;
+
+    }
+    &__current-tasks{
+       flex:1;
+       background-color: #18181b;
+border: 1px solid #464649;
+border-radius:5px;
+padding:1rem;
+
+
+    }
+    &__title{
+        width: 100%;
+        height:fit-content;
+
+    }
+    &__message{
+        background-color: #464649;
+        border: 1px solid #59595b;
+        border-radius:5px;
+        padding:1rem; 
+   }
+
+    &__field{
+        width: 100%;
+        display: flex;
+        border: 1px solid #4e4e4e;
+        background-color: #3a3a3a;
+        border-radius:5px;
+       }
+    &__label{
+    flex: 1;
+    padding: 1rem;
+    border-right: 1px solid #4e4e4e;
+    }
+    &__input{
+        flex: 3;
+        padding: 1rem;
+        background-color: #3a3a3a;
+border:0;
+
+    }
+}
+

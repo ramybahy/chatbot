@@ -1,0 +1,20 @@
+.side-menu{
+    background-color: #18181b;
+    height:100vh;
+    padding:2rem;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    &__signout{
+        background-color: transparent;
+        color:white;
+        font-weight: bold;
+padding:0.5rem 1rem;
+margin-top:auto;
+border:0;
+&:hover{
+    background-color:hsla(0,0%,100%,.05)
+}
+    }
+}
