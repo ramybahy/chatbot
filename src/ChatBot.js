@@ -15,6 +15,8 @@ function ChatBot() {
   const handleClick=()=>{
     setAgent(true)
   }
+  const onAnimationComplete=()=>{
+  }
   const tasks=["Research and select the dates for the trip and book flights to Hawaii"
 ,"Choose accommodations based on budget and preferences and make reservations.",
 "Plan activities and tours to do while in Hawaii."
@@ -57,7 +59,8 @@ Links:["https://www.budgetdirect.com.au/interactives/best-time-to-visit/hawaii/"
         tasks.map((task,i) =>    
           <motion.div initial={{ opacity: 0 }}
           animate={{ opacity: 1 }} 
-          transition={{ duration: 1, delay: i*1 }}>
+          transition={{ duration: 1, delay: i*1 }}
+          onAnimationComplete={onAnimationComplete}>
           <Sentence key={i} line={task}/>
           </motion.div>
           )
