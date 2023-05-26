@@ -11,7 +11,8 @@ import { useState } from 'react';
 function ChatBot(props) {
   const [name, setName] = useState("");
   const savedAgentsfromLocal = localStorage.getItem("savedAgents")?.replace(/'/g, '"')
-  const [savedChat, setsavedChat] = useState(JSON.parse(savedAgentsfromLocal));
+  const parsedSavedAgents = savedAgentsfromLocal? JSON.parse(savedAgentsfromLocal):[]
+  const [savedChat, setsavedChat] = useState(parsedSavedAgents);
 
   const [travel, setTravel] = useState("");
   const [agent, setAgent] = useState(false);
@@ -23,7 +24,6 @@ function ChatBot(props) {
   const saveChat=()=>{
     setsavedChat([...savedChat,name])
     localStorage.setItem("savedAgents",JSON.stringify([...savedChat,name]))
-    console.log(savedChat)
   }
 
   const onAnimationComplete=()=>{
