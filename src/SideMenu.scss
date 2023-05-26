@@ -1,11 +1,11 @@
 .side-menu{
     background-color: #18181b;
-    height:100vh;
-    padding:2rem;
-    flex:1;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
    align-items: center;
+
+flex: 1;
     &__signout{
         background-color: transparent;
         color:white;

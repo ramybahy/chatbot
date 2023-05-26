@@ -1,0 +1,27 @@
+.previous-chat{
+    background: #292929;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color:white;
+
+&__back-button{
+    background-color: #1f69ab;
+    color:white;
+    border-radius: 5px;
+    padding:1rem 1.5rem;
+    font-weight: bold;
+    border: 0;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+&__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat-bot__agent-chat-inner{
+    padding: 2rem 1rem;
+}
+}

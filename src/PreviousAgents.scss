@@ -1,4 +1,18 @@
 .previous-agent{
     color:white;
-    
+    display: flex;
+    flex-direction: column;
+    &__button{
+        background-color: #464649;
+        border: 1px solid #59595b;
+        border-radius:5px;
+        color:white;
+        font-weight: bold;
+        padding:0.5rem 1rem;
+        margin-top:auto;
+        margin-bottom: 1rem;
+        &:hover{
+        background-color:hsla(0,0%,100%,.05)
+        }
+    }
 }
