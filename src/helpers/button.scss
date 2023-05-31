@@ -1,0 +1,31 @@
+.button{
+    &--primary{
+        background-color: #464649;
+        border: 1px solid #59595b;
+        border-radius:5px;
+        color:white;
+        font-weight: bold;
+        margin-top: auto;
+        padding:0.5rem 1rem;
+        &:hover{
+        background-color:hsla(0,0%,100%,.05)
+        }
+    }
+
+    &--secondary{
+        background-color: #1f69ab;
+        color:white;
+        border-radius: 5px;
+        padding:1rem 1.5rem;
+        font-weight: bold;
+        border: 0;
+    }
+
+    &--disabled{
+        background-color: #18181b;
+        color:#5c5c5e;
+        border:2px solid gray;
+        &:hover{ cursor:no-drop}
+    }
+
+}

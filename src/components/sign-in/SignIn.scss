@@ -1,8 +1,7 @@
-@import 'form';
+@import '../../helpers/form';
 
-.sign-up{
-    @extend .form;
-
+.sign-in{
+   @extend .form;
 
     &__title{
         @extend .form__title;

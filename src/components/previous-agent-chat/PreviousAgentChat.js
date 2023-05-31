@@ -1,11 +1,11 @@
-import './PreviousAgentsChat.scss';
+import './PreviousAgentChat.scss';
 import React from "react";
-import Sentence from './Sentence';
-import Results from './Results';
+import Sentence from '../sentence/Sentence';
+import Results from '../results/Results';
 import { motion } from "framer-motion"
 import { useNavigate } from "react-router-dom";
 
-function PreviousAgentsChat(props) {
+function PreviousAgentChat(props) {
 const tasks= props.tasks;
 const results= props.results;
 const navigate = useNavigate();
@@ -44,4 +44,4 @@ const navigate = useNavigate();
   );
 }
 
-export default PreviousAgentsChat;
+export default PreviousAgentChat;

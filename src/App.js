@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.scss';
-import SignUp from './SignUp';
-import SignIn from './SignIn';
-import ChatBot from './ChatBot';
-import PreviousAgentsChat from './PreviousAgentsChat';
+import SignUp from './components/sign-up/SignUp';
+import SignIn from './components/sign-in/SignIn';
+import ChatBot from './components/chat-bot/ChatBot';
+import PreviousAgentChat from './components/previous-agent-chat/PreviousAgentChat';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -32,7 +31,7 @@ function App() {
         <Route path="/chatbot" element={<SignUp />}/>
         <Route path="/chatbot/signin" element={<SignIn />} />
         <Route path="/chatbot/chatwindow" element={<ChatBot tasks={tasks} results={results} />} />
-        <Route path="/chatbot/previous-agent-chat" element={<PreviousAgentsChat tasks={tasks} results={results}/>} />
+        <Route path="/chatbot/previous-agent-chat" element={<PreviousAgentChat tasks={tasks} results={results}/>} />
       </Routes>
     </BrowserRouter>
     </div>

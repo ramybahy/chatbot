@@ -2,7 +2,7 @@ import './SideMenu.scss';
 import { NavLink } from "react-router-dom";
 import React, { useRef  } from "react";
 import { useNavigate } from "react-router-dom";
-import PreviousAgents from './PreviousAgents';
+import PreviousAgents from '../previous-agents/PreviousAgents';
 import Hamburger from 'hamburger-react'
 import { useState } from 'react';
 import { motion } from "framer-motion"

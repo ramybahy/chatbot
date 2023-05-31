@@ -1,9 +1,9 @@
 import './ChatBot.scss';
 import { NavLink } from "react-router-dom";
 import React, { useRef  } from "react";
-import SideMenu from './SideMenu';
-import Sentence from './Sentence';
-import Results from './Results';
+import SideMenu from '../side-menu/SideMenu';
+import Sentence from '../sentence/Sentence';
+import Results from '../results/Results';
 import { motion } from "framer-motion"
 
 import { useState } from 'react';

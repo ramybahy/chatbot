@@ -1,3 +1,4 @@
+@import '../../helpers/button';
 .chat-bot{
     &__window{background-color: #292929;
    display: flex;
@@ -14,22 +15,10 @@
     margin:0 0 1rem 1rem;
 }
 &__save{
- 
-    background-color: #464649;
-    border: 1px solid #59595b;
-    border-radius:5px;
-    color:white;
-    font-weight: bold;
-    padding:0.5rem 1rem;
-    margin-top:auto;
-    &:hover{
-    background-color:hsla(0,0%,100%,.05)
-    }
+    @extend .button--primary;
+    
     &--disabled{
-        background-color: #18181b;
-        color:#5c5c5e;
-        border:2px solid gray;
-        &:hover{ cursor:no-drop}
+    @extend .button--disabled
     }
 }
 &__inner{
@@ -38,18 +27,10 @@
     background-color: #292929;
 }
    &__deploy{
-        background-color: #1f69ab;
-        color:white;
-        border-radius: 5px;
-        padding:1rem 1.5rem;
-        font-weight: bold;
-        border: 0;
-
+        
+        @extend .button--secondary;
         &--disabled{ 
-                background-color: #18181b;
-                color:#5c5c5e;
-                border:2px solid gray;
-                &:hover{ cursor:no-drop}
+            @extend .button--disabled
         }
    }
    &__agent-chat{
