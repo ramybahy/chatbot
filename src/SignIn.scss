@@ -1,28 +1,19 @@
+@import 'form';
+
 .sign-in{
-    margin:auto;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+   @extend .form;
 
     &__title{
-        font-weight: bold;
-        size: 32px;
+        @extend .form__title;
+
     }
     &__input{
-        display:block;
-        margin-bottom: 2rem;
-        padding:1rem;
-        width: 100%;
-        border: 1px solid #ccc;
+        @extend .form__input;
+
     }
     &__submit{
-        width:fit-content;
-        background-color: green;
-        color: #fff;
-        border:0;
-        padding: 0.5rem 1rem;
+        @extend .form__submit;
+
     }
 }
 

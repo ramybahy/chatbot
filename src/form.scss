@@ -1,0 +1,28 @@
+.form{
+    margin:auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    &__title{
+        font-weight: bold;
+        size: 32px;
+    }
+    &__input{
+        display:block;
+        margin-bottom: 2rem;
+        padding:1rem;
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+    &__submit{
+        width:fit-content;
+        background-color: green;
+        color: #fff;
+        border:0;
+        padding: 0.5rem 1rem;
+    }
+}
+
