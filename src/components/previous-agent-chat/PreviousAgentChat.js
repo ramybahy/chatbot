@@ -32,7 +32,7 @@ const navigate = useNavigate();
           results.map((item,i) => 
             <motion.div initial={{ opacity: 0 }}
             animate={{ opacity: 1 }} 
-            transition={{ duration: 1, delay: i*1 }}>
+            transition={{ duration: 1, delay: (i*1)+3 }}>
           <Results key={i} result={item.result} taskName={item.task} />
           </motion.div>)
           }
